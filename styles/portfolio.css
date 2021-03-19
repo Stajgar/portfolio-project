@@ -1,31 +1,57 @@
+:root {
+  --primary-color: #a7f9fb;
+  --secondary-color: #865aa8;
+  --heading-font-family: "Archivo Black", sans-serif;
+  --secondary-font-family: "Judson", serif;
+}
+
 body {
-  background-color: #865aa8;
+  background: var(--secondary-color);
 }
 
 h1,
-h2,
-h3 {
-  font-family: "Archivo Black", sans-serif;
-  color: #a7f9fb;
-  text-align: left;
-  font-size: 42px;
-  margin-left: 60px;
+h2 {
+  font-family: var(--heading-font-family);
 }
 
 h1 {
-  margin-top: 60px;
+  font-size: 42px;
 }
 
-h3 {
-  font-size: 20px;
-}
-
-p {
-  font-family: "Judson", serif;
-  color: #a7f9fb;
+.hero {
+  color: var(--primary-color);
+  text-align: left;
+  margin-top: 20px;
   margin-left: 60px;
 }
 
+.hero p {
+  font-family: var(--secondary-font-family);
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.hero h2 {
+  font-size: 20px;
+  line-height: 2;
+}
+
 .fab fa-instagram {
-  color: #a7f9fb;
+  color: var(--primary-color);
+}
+
+.btn-branding {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+}
+
+.btn-branding:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
 }
