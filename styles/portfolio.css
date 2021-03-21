@@ -10,7 +10,9 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: var(--heading-font-family);
 }
 
@@ -18,11 +20,25 @@ h1 {
   font-size: 42px;
 }
 
+h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 20px;
+  color: #fff;
+}
+
 .hero {
   color: var(--primary-color);
   text-align: left;
-  margin-top: 20px;
   margin-left: 60px;
+  padding: 160px 20px;
 }
 
 .hero p {
@@ -35,14 +51,15 @@ h1 {
 
 .hero h2 {
   font-size: 20px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
-.fab fa-instagram {
-  color: var(--primary-color);
+.container {
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
 }
 
-.btn-branding {
+.btn-homepage {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 6px;
@@ -50,8 +67,41 @@ h1 {
   font-weight: bold;
 }
 
-.btn-branding:hover {
+.btn-homepage:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  border: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+}
+
+.shecodes-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 10px;
+    margin: 10px;
+  }
 }
