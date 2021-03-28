@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Project</title>
+    <meta
+      name="description"
+      content="Portfolio of Agnieszka Skupińska Frontend Developer from Warsaw, Poland - Weather Apps and more"
+    />
+    <title>
+      🌐 Portfolio - Agnieszka Skupińska, Frontend Developer from Warsaw, Poland
+    </title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -30,62 +36,201 @@
     ></script>
   </head>
   <body>
-    <div class="hero">
-      <p>> Hello, World!_</p>
-      <h1>I'm Agnieszka Skupińska,</h1>
-      <h2>Front-end Developer from Warsaw, PL</h2>
-      <a href="#" class="btn btn-homepage">Contact Me</a>
-    </div>
-    <p class="text-center mt-5">↓ See My Projects ↓</p>
-
-    <div class="container mb-5">
-      <div class="projects p-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&lt;Agnieszka Skupińska/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-main">
+      <div class="hero">
         <div class="row">
-          <div class="col-lg-6">
-            <h3 class="mt-5 mb-3">Weather App</h3>
-            <p class="mb-3">
-              Weather App in retro style, built in two different ways - one
-              using Vanilla JS 🍨, one using React ⚛️. Both using Bootstrap,
-              FontAwesome and OpenWeather API. <br />
-              Projects made in
-              <a
-                href="https:/www.shecodes.io/learn/workshops"
-                class="shecodes-link"
-                >SheCodes Workshops</a
-              >.
-            </p>
+          <div class="col-8">
+            <p>> Hello, World!_</p>
+            <h1>I'm Agnieszka Skupińska,</h1>
+            <h2>Front-end Developer from Warsaw, PL</h2>
+            <a href="/about.html" class="btn btn-lg btn-hero mt-2">About Me</a>
+          </div>
+          <div class="col-4">
+            <ul class="social-links">
+              <li>
+                <a
+                  href="mailto:agi.skupinska@gmail.com"
+                  title="Contact Agnieszka Skupińska"
+                  ><i class="fas fa-at btn"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/Stajgar" target="_blank"
+                  ><i class="fab fa-github btn"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/agnieszkaskupinska/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin btn"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/stajgar/"
+                  target="_blank"
+                  title="Follow Me"
+                  ><i class="fab fa-instagram btn"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-5 section" id="projects">
+        Projects
+        <br /><i class="fas fa-long-arrow-alt-down"></i>
+      </p>
+    </div>
+    <div class="container projects-section">
+      <div class="row mt-5">
+        <div class="col-sm-6">
+          <img
+            src="images/pixel.png"
+            class="img-fluid rounded d-none d-md-block"
+            alt="Pixel Weather App"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h2 class="mt-3 mb-3">Pixel Weather App</h2>
+          <p class="text-dark">
+            App inspired by 90's Windows style. Vintage-looking background and
+            pixelated icons are giving the project a retro vibe. Pixel Weather
+            App utilises OpenWeather API to provide real time data about weather
+            in searched places. Frontend layer was built using Javascript ES6
+            and Bootstrap.
+          </p>
+          <div class="mt-3">
             <a
               href="https://gifted-allen-dc7861.netlify.app/"
-              class="btn btn-homepage"
-              title="See Weather App in pure JS"
-              >Launch App in Vanilla JS</a
-            >
-            <a
-              href="https://clever-easley-a5d809.netlify.app/"
-              class="btn btn-homepage"
-              title="See Weather App in React"
-              >Launch App in React</a
-            >
-          </div>
-          <div class="col-lg-6">
-            <h3 class="mt-5 mb-3">Puzzles App</h3>
-            <p class="mb-3">
-              Simple, static Puzzles App. My first experience with HTML and CSS.
-              <br />
-              Project made in
-              <a
-                href="https://www.shecodes.io/learn/workshops"
-                class="shecodes-link"
-                >SheCodes Workshops</a
-              >.
-            </p>
-            <a
-              href="https://www.shecodes.io/workshops/shecodes-online-workshop-32-0/projects/107278"
-              class="btn btn-homepage"
-              title="See Puzzles App"
+              target="_blank"
+              class="btn btn-launch"
+              title="Launch Pixel Weather App"
               >Launch App</a
             >
           </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-6">
+          <h2 class="mt-3 mb-3">Retro Weather App</h2>
+          <p class="text-dark">
+            The goal of this project was to rebuild an application implemented
+            in Pixel Weather App using React ⚛️ It looks almost the same, but
+            the code is much more readable and aesthetic. Also the icons are
+            changed to animated ones. Retro Weather App utilises OpenWeather API
+            to provide real time data about weather in searched places. Frontend
+            layer was built mainly using React and Bootstrap.
+          </p>
+          <div class="mt-3">
+            <a
+              href="https://clever-easley-a5d809.netlify.app/"
+              target="_blank"
+              class="btn btn-launch"
+              title="Launch Retro Weather App"
+              >Launch App</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="images/retro.png"
+            class="img-fluid rounded d-none d-md-block"
+            alt="retro weather app"
+          />
+        </div>
+        <div class="row text-center mt-5">
+          <h4 class="text-dark">Tech Stack & Tools</h4>
+          <p class="stack text-dark mt-1">
+            React 17.0.1 | Bootstrap 4.5.3 | Prettier 2.2.1 | Axios |
+            OpenWeather API |
+            <br />
+            Font Awesome | GitHub | Netlify | InVision | Adobe XD | Adobe
+            Illustrator | Adobe Photoshop
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="contact" class="mt-5 p-5">
+        <h2 class="text-center">Contact</h2>
+        <a
+          href="mailto:agi.skupinska@gmail.com"
+          class="email-link"
+          title="Email me"
+        >
+          agi.skupinska@gmail.com
+        </a>
+        <div class="text-center">
+          <a
+            href="https://github.com/Stajgar"
+            target="_blank"
+            title="See My Code"
+            ><i class="fab fa-github btn"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/agnieszkaskupinska/"
+            target="_blank"
+            title="See My Profile"
+            ><i class="fab fa-linkedin btn"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/stajgar/"
+            target="_blank"
+            title="Follow Me"
+            ><i class="fab fa-instagram btn"></i
+          ></a>
+        </div>
+        <div class="text-dark text-center mt-5">
+          This project was coded by
+          <a href="" target="_blank" class="signature" title="See My Profile"
+            >&lt;Agnieszka Skupińska/> </a
+          >, open-sourced on
+          <a
+            href="https://github.com/Stajgar/portfolio-project"
+            target="_blank"
+            title="See My Code"
+            class="github-link"
+            >GitHub</a
+          >.
         </div>
       </div>
     </div>
