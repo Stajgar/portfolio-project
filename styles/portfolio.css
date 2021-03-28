@@ -90,19 +90,38 @@ h3 {
   font-size: 32px;
 }
 
+.fa-github:hover {
+  color: #fff;
+}
+
 .fa-linkedin {
   color: var(--primary-color);
   font-size: 32px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fa-linkedin:hover {
+  color: #fff;
 }
 
 .fa-at {
   color: var(--primary-color);
   font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.fa-at:hover {
+  color: #fff;
 }
 
 .fa-instagram {
   color: var(--primary-color);
   font-size: 32px;
+}
+
+.fa-instagram:hover {
+  color: #fff;
 }
 
 .pointer {
