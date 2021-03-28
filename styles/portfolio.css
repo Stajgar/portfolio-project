@@ -159,7 +159,7 @@ h3 {
 }
 
 .email-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 .container p {
@@ -204,6 +204,10 @@ h3 {
 .signature {
   text-decoration: none;
   color: #fff;
+}
+
+.signature:hover {
+  color: var(--primary-color);
 }
 
 /* About Me page */
