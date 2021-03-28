@@ -20,11 +20,6 @@ h2 {
   font-size: 32px;
 }
 
-.section {
-  font-size: 20px;
-  color: #fff;
-}
-
 .hero h1,
 h2,
 h3 {
@@ -86,8 +81,8 @@ h3 {
 
 .social-links {
   position: absolute;
-  right: 5%;
   list-style: none;
+  right: 5%;
 }
 
 .fa-github {
@@ -110,8 +105,22 @@ h3 {
   font-size: 32px;
 }
 
-.section {
+.pointer {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  left: 50%;
+}
+
+.projects-link {
   font-family: var(--secondary-font-family);
+  font-size: 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.projects-link:hover {
+  color: #fff;
 }
 
 .projects-section h2 {
